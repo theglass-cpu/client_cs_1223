@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="3.37.212.160" id="fd922cfb-d16e-4396-ae49-17d2471050cc" keyPath="C:\Users\rushx\OneDrive\바탕 화면\awskeypare\newyuri.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+    </configs>
+  </component>
+</project>

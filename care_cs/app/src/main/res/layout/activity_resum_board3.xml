@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".resum_board3_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공고올리기"
+        android:gravity="center"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_margin="11dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/tway_air"
+        android:text="(목욕 세수 양치) 위생관리는 어떻게 하시는 분을 원하시나요?"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radio_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:text="스스로 가능하신분"/>
+
+    <RadioButton
+        android:id="@+id/radio_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:text="전지적 도움이필요 하신 분"/>
+
+
+    <RadioButton
+        android:id="@+id/radio_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:text="둘다 상관없음"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/tway_air"
+        android:text="식사는 어떻게 하시는 분을 원하시나요?"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_bt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="스스로 가능하신분"/>
+
+        <RadioButton
+            android:id="@+id/radio_bt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="전지적 도움이필요 하신 분"/>
+
+
+        <RadioButton
+            android:id="@+id/radio_bt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="둘다 상관없음"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/tway_air"
+        android:text="이동은 어떻게 하시는 분을 원하시나요?"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_bt21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="스스로 가능하신분"/>
+
+        <RadioButton
+            android:id="@+id/radio_bt22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="전지적 도움이필요 하신 분"/>
+
+
+        <RadioButton
+            android:id="@+id/radio_bt23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="둘다 상관없음"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/result_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#4CAF50"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:text="제출"/>
+
+</LinearLayout>

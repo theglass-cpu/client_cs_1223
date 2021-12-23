@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="간병인버전 케어팜"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/tway_air"/>
+
+
+    <LinearLayout
+        android:id="@+id/admin_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/resume" />
+
+    <Button
+        android:id="@+id/resum_list_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#9AD654"
+        android:fontFamily="@font/tway_air"
+        android:padding="10dp"
+        android:text="공고내역"
+        android:textSize="20dp"
+        app:backgroundTint="#4CAF50" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/businessmen" />
+
+    <Button
+        android:id="@+id/matc_list_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="신청내역"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:background="#9AD654"
+        app:backgroundTint="#4CAF50"
+        android:fontFamily="@font/tway_air"/>
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/cogwheel" />
+
+    <Button
+        android:id="@+id/mypage_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="회원정보"
+        android:padding="10dp"
+        android:textSize="20dp"
+        app:backgroundTint="#4CAF50"
+        android:background="#9AD654"
+        android:fontFamily="@font/tway_air"/>
+    </LinearLayout>
+</LinearLayout>

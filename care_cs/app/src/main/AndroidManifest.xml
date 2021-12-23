@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.techtown.care_cs">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Care_cs"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <service
+            android:name=".ServiceWithMessenger"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".chat_bind_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Tcp_connetion_server"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <service
+            android:name=".RestartService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".AlarmRecever"/>
+        <receiver
+            android:name=".RebootRecever"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <activity
+            android:name=".chat_room_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".matching_list_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".client_request_detail_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".client_request_list_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".view_df_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".write_resum_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".view_resum_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".edit_mypage_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".admin_resum_view_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AddressApiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".resum_board3_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".resum_board2_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".resum_board_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".mypage_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".resum_list_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".findActivity"
+            android:exported="true" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".joinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".intro_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao7c510e8249b71fead3f19b4ff866a884" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

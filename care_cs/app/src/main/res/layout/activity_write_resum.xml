@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".write_resum_Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/sad" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="등록된 공고가 없는데요?"
+        android:textSize="30dp"
+        android:fontFamily="@font/tway_air"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tway_air"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="사람들이 당신의 도움을 필요로 하고 있어요!"/>
+
+    <Button
+        android:id="@+id/resum_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:layout_margin="30dp"
+        android:text="공고올리기"
+        android:textSize="30dp"
+        app:backgroundTint="#4CAF50" />
+
+
+</LinearLayout>

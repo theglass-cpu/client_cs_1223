@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mypage_Activity">
+
+
+    <TextView
+        android:id="@+id/user_id"
+        android:text="아이디"
+        android:fontFamily="@font/tway_air"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="간병인 케어팜 회원정보"
+        android:fontFamily="@font/tway_air"
+        android:gravity="center"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/edit_mypage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:padding="20dp"
+        android:text="정보변경"
+        android:textSize="20dp"
+        app:backgroundTint="#4CAF50" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/view_resum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:padding="20dp"
+        android:text="내 공고보기"
+        android:textSize="20dp"
+        app:backgroundTint="#4CAF50" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/view_matching_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:padding="20dp"
+        android:text="매칭내역"
+        android:textSize="20dp"
+        app:backgroundTint="#4CAF50" />
+
+</LinearLayout>

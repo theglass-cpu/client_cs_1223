@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".resum_board_Activity">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공고올리기"
+        android:gravity="center"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/resum_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/user" />
+
+    <Button
+        android:id="@+id/resum_pt_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#4CAF50"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="프로필사진올리기"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:text="이름"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:hint="ex)홍길동"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:text="성별"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남"/>
+
+            <RadioButton
+                android:id="@+id/radio_bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/tway_air"
+    android:textSize="20dp"
+    android:layout_margin="15dp"
+    android:text="생년월일 6자리"/>
+
+    <EditText
+        android:id="@+id/age_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex)881112"/>
+
+
+
+    <Button
+        android:id="@+id/resum_bord_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#4CAF50"
+        android:fontFamily="@font/tway_air"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:text="다음"/>
+
+</LinearLayout>

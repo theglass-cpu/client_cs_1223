@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/cs_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:fontFamily="@font/tway_air"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="간병을신청한 사람"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cs_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/tway_air"
+        android:padding="10dp"
+        android:text="원하는 날"/>
+
+    <TextView
+        android:id="@+id/cs_deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/tway_air"
+        android:padding="10dp"
+        android:text="게시일"/>
+
+
+
+</LinearLayout>

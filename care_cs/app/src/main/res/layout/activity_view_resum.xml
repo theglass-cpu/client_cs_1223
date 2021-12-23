@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view_resum_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/text_resum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="15dp"
+            android:text="공고"/>
+
+        <TextView
+            android:id="@+id/resum_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#C6C6C6"
+            android:fontFamily="@font/tway_air"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="접수중"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/resum_profile"
+            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:gravity="center"
+            android:text="이름"
+            android:layout_margin="10dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/resum_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="이름"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:text="성별"/>
+
+        <TextView
+            android:id="@+id/resum_sx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="성별"/>
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="생년월일"/>
+
+        <TextView
+            android:id="@+id/resum_age"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="생년월일"/>
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="간병위치"/>
+
+        <TextView
+            android:id="@+id/resum_lo"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="간병위치"/>
+
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="간병인경력"/>
+
+        <TextView
+            android:id="@+id/resum_level"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="간병인경력"/>
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="자격증"/>
+
+        <TextView
+            android:id="@+id/resum_cf"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="자격증"/>
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:text="(목욕 세수 양치) 위생관리는 어떻게 하시는 분을 원하시나요?"/>
+
+        <TextView
+            android:id="@+id/resum_wh"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="위생관리 "/>
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="식사는 어떻게 하시는 분을 원하시나요?"/>
+
+        <TextView
+            android:id="@+id/resum_ml"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="식사 "/>
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="이동은 어떻게 하시는 분을 원하시나요?"/>
+
+        <TextView
+            android:id="@+id/resum_mv"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+
+            android:text="이동 "/>
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/tway_air"
+            android:textSize="25dp"
+            android:background="#8BC34A"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:text="첨부서류"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/resum_df"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/tway_air"
+            android:textColor="#000000"
+            android:text="이동 "/>
+
+            <Button
+                android:id="@+id/view_df"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                app:backgroundTint="#B8B8B8"
+                android:fontFamily="@font/tway_air"
+                android:text="보기"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resum_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="공고취소"
+            android:fontFamily="@font/tway_air"
+            android:textSize="20dp"
+            app:backgroundTint="#B8B8B8" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

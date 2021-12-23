@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".resum_board2_Activity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공고올리기"
+        android:gravity="center"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+
+
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="간병이 가능하신 위치를 입력해주세요"
+       android:fontFamily="@font/tway_air"
+       android:layout_margin="15dp"
+       android:textSize="20dp"
+       />
+
+    <TextView
+        android:id="@+id/lo"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lo_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+
+            android:text="입력"
+            android:textSize="20dp"
+            app:backgroundTint="#4CAF50" />
+
+        <CheckBox
+        android:id="@+id/place_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:text="지역상관없음"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="간병인 경력 또는 횟수 "
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/car_Box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:textSize="15dp"
+            android:text="1년미만" />
+
+
+
+        <RadioButton
+            android:id="@+id/car_Box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:textSize="15dp"
+            android:text="1년이상" />
+
+        <RadioButton
+            android:id="@+id/car_Box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:textSize="15dp"
+            android:text="3년이상" />
+
+        <RadioButton
+            android:id="@+id/car_Box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:textSize="15dp"
+            android:text="5년이상" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보유자격증"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/tway_air"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cate_Box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="사회복지사" />
+
+        <CheckBox
+            android:id="@+id/cate_Box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="간호조무사" />
+
+        <CheckBox
+            android:id="@+id/cate_Box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="물리치료사" />
+
+        <CheckBox
+            android:id="@+id/cate_Box4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tway_air"
+            android:text="요양보호사" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cate_Box_etc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:fontFamily="@font/tway_air"
+            android:text="기타" />
+
+        <EditText
+            android:id="@+id/cate_Box_etc_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:fontFamily="@font/tway_air"
+            android:hint="기타항목입력"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:text="선택한 자격증과 첨부한 서류가 다를 경우 공고가 거절될 수 있습니다"/>
+
+    <Button
+        android:id="@+id/cf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#909390"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:text="첨부서류"/>
+
+    <TextView
+        android:id="@+id/cf_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tway_air"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/resum_bord_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#4CAF50"
+        android:fontFamily="@font/tway_air"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:text="다음"/>
+
+
+</LinearLayout>
